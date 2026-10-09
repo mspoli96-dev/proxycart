@@ -1,0 +1,1456 @@
+[
+ {
+  "id": "821b5431-ba92-455e-aaec-04cbf9f9c298",
+  "source": "recorded",
+  "status": "completed",
+  "model": "gpt-6-luna",
+  "scenario": "standard",
+  "startedAt": 1791586074580,
+  "elapsedMs": 154909,
+  "budgetCents": 125000,
+  "conditions": {
+   "harbourSignedIn": true,
+   "hoodiesSoldOutAt": [],
+   "stockOutArmed": false
+  },
+  "steps": [
+   {
+    "kind": "origin",
+    "id": "decision-0",
+    "at": 40637,
+    "origin": "https://proxycart-maple-supply.vercel.app",
+    "storeId": "maple",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-0",
+    "at": 43443,
+    "event": {
+     "at": 1791586118023,
+     "storeId": "maple",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-1",
+    "at": 48719,
+    "origin": "https://proxycart-harbour-print.vercel.app",
+    "storeId": "harbour",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-1",
+    "at": 51247,
+    "event": {
+     "at": 1791586125827,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-2",
+    "at": 56506,
+    "origin": "https://proxycart-northbound-goods.vercel.app",
+    "storeId": "northbound",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-2",
+    "at": 58749,
+    "event": {
+     "at": 1791586133329,
+     "storeId": "northbound",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-3",
+    "at": 68757,
+    "event": {
+     "at": 1791586143337,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "sign-in"
+    }
+   },
+   {
+    "kind": "sign-in",
+    "id": "decision-3",
+    "at": 81200,
+    "storeId": "harbour",
+    "decision": "submit"
+   },
+   {
+    "kind": "store",
+    "id": "store-4",
+    "at": 84158,
+    "event": {
+     "at": 1791586158738,
+     "storeId": "harbour",
+     "kind": "signed-in",
+     "detail": "Team buyer signed in. Team pricing unlocked."
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-5",
+    "at": 84504,
+    "event": {
+     "at": 1791586159084,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "approval",
+    "id": "decision-4",
+    "at": 133112,
+    "evaluation": {
+     "carts": [
+      {
+       "storeId": "harbour",
+       "lines": [
+        {
+         "sku": "HP-HD-21",
+         "name": "Studio Hoodie",
+         "kind": "hoodie",
+         "quantity": 20,
+         "unitCents": 3900,
+         "lineCents": 78000,
+         "stock": 80,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-NB-23",
+         "name": "Linen Notebook A5",
+         "kind": "notebook",
+         "quantity": 20,
+         "unitCents": 825,
+         "lineCents": 16500,
+         "stock": 90,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-TM-22",
+         "name": "Harbour Tumbler",
+         "kind": "tumbler",
+         "quantity": 20,
+         "unitCents": 1200,
+         "lineCents": 24000,
+         "stock": 120,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 118500,
+       "shippingCents": 0,
+       "totalCents": 118500,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      }
+     ],
+     "totalCents": 118500,
+     "budgetCents": 125000,
+     "quantities": {
+      "hoodie": 20,
+      "tumbler": 20,
+      "notebook": 20
+     },
+     "issues": [],
+     "withinBudget": true,
+     "meetsDeadline": true,
+     "complete": true,
+     "valid": true,
+     "bestCents": 115500,
+     "reportedTotalCents": 118500
+    },
+    "summary": "Harbour Print Studio is the only complete option within the CAD 1,250 budget and 4-business-day deadline: signed-in team prices total CAD 1,185, with free shipping and all 60 items arriving in 2 business days. Maple totals above budget, while Northbound’s A5 notebook arrives in 6 business days.",
+    "changeReason": null,
+    "decision": "approve",
+    "newBudgetCents": null,
+    "mandates": [
+     {
+      "storeId": "harbour",
+      "code": "PXC-••••-R5BY",
+      "amountCents": 118500,
+      "expiresAt": 1791587107692
+     }
+    ]
+   },
+   {
+    "kind": "store",
+    "id": "store-6",
+    "at": 139135,
+    "event": {
+     "at": 1791586213715,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "checkout"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-7",
+    "at": 150311,
+    "event": {
+     "at": 1791586224891,
+     "storeId": "harbour",
+     "kind": "order-placed",
+     "detail": "Test order HP-654710 placed with mandate PXC-••••-R5BY.",
+     "amountCents": 118500,
+     "orderNumber": "HP-654710",
+     "mandate": "PXC-••••-R5BY"
+    }
+   },
+   {
+    "kind": "message",
+    "id": "msg_0273813800779055016ac96f2033dc87d28651aef8ac0133af",
+    "at": 154909,
+    "text": "I’m comparing the listed items, stock, delivery estimates, and shipping across all three stores, then I’ll assemble the lowest-cost eligible carts for approval."
+   },
+   {
+    "kind": "action",
+    "id": "exec-4c32df23-1998-4365-84fd-3a6bacf824b7",
+    "at": 154909,
+    "title": "Connecting to the stores",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-f9649ef1-dcc3-46a4-911c-fbf072ddb532",
+    "at": 154909,
+    "title": "Comparing store offerings",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-28261927-35ed-43ce-bae2-eca7f53ad621",
+    "at": 154909,
+    "title": "Checking team pricing options",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-ee70955f-d8c2-435b-b0d8-b62c9c4cb27b",
+    "at": 154909,
+    "title": "Checking team pricing options",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-3c0b91f3-7b92-467f-a804-3d5a2cf2df2c",
+    "at": 154909,
+    "title": "Viewing Harbour team pricing sign-in",
+    "status": "failed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-91006652-263b-4ce4-8878-28124a9816c8",
+    "at": 154909,
+    "title": "Viewing Harbour team pricing sign-in",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-9980242b-4229-4847-b4e2-60184c24f1e2",
+    "at": 154909,
+    "title": "Viewing Harbour team pricing sign-in",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-7394413b-1520-4e69-b453-3243c6b3345a",
+    "at": 154909,
+    "title": "Checking the sign-in form",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-6c8aa1e1-6b1f-4ae2-866f-8d688e43bf72",
+    "at": 154909,
+    "title": "Requesting secure sign-in for team pricing",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-6e3651c8-80a9-4a60-bf5e-adc306e09005",
+    "at": 154909,
+    "title": "Checking Harbour sign-in result",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_0273813800779055016ac96f77b07c87d2a103ab5814a06c7d",
+    "at": 154909,
+    "text": "Harbour’s signed-in team prices bring the full set to CAD 1,185 with free shipping; all 60 items are in stock and the delivery estimate is 2 business days. Maple exceeds budget, and Northbound’s A5 notebook takes 6 business days, so I’m building the complete set at Harbour."
+   },
+   {
+    "kind": "action",
+    "id": "exec-b13a1103-2ba8-4344-a9d4-69ae03541cb5",
+    "at": 154909,
+    "title": "Preparing the Harbour cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-4c8cd84c-4600-4508-abc5-6d687675234f",
+    "at": 154909,
+    "title": "Adding 20 hoodies to the cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-9b3d9de0-0124-43c0-b398-7efaa17cdf1c",
+    "at": 154909,
+    "title": "Checking the cart update",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-22126caf-35e6-42b4-a476-c607b779375f",
+    "at": 154909,
+    "title": "Retrying the hoodie cart update",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-581a1e5d-bdb1-474a-bdcb-266e2ded1383",
+    "at": 154909,
+    "title": "Adding 20 tumblers to the cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-a74c4ecc-f07f-44f0-a137-5436c4bbd437",
+    "at": 154909,
+    "title": "Verifying cart contents",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-2865a231-a244-458a-8a22-3fd5a3d761e1",
+    "at": 154909,
+    "title": "Adding 20 tumblers to the cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-51f7e914-75de-4ee5-bfe8-68457729ad0e",
+    "at": 154909,
+    "title": "Reviewing the completed cart",
+    "status": "failed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-52edf463-8f75-495c-a2b6-b2ccd60cac99",
+    "at": 154909,
+    "title": "Reviewing the completed cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_0273813800779055016ac96fa4561087d294061adef0d5fff6",
+    "at": 154909,
+    "text": "The exact Harbour cart is ready and approved at CAD 1,185. I’m applying its store-specific approval code in Harbour’s checkout now."
+   },
+   {
+    "kind": "action",
+    "id": "exec-6e738200-3a67-4b5f-a7f8-cbe3abb02262",
+    "at": 154909,
+    "title": "Opening Harbour checkout",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-4ab19c81-7215-48f4-a4a2-81de2656f73b",
+    "at": 154909,
+    "title": "Loading the approved order details",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-e10cf255-0187-4fad-ba91-a1fd0051b4af",
+    "at": 154909,
+    "title": "Applying Harbour’s approved mandate",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-f54dcad9-31b3-4876-85a7-38574316f3b0",
+    "at": 154909,
+    "title": "Placing the approved test order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_0273813800779055016ac96fb35b2487d29b7256c019494069",
+    "at": 154909,
+    "text": "Placed Harbour Print Studio test order HP-654710: 20 hoodies, 20 insulated tumblers, and 20 A5 notebooks. Total: **CAD 1,185.00**, including free shipping; estimated delivery is 2 business days. The store confirmed no real payment was taken."
+   }
+  ],
+  "pending": null,
+  "finalMessage": "Placed Harbour Print Studio test order HP-654710: 20 hoodies, 20 insulated tumblers, and 20 A5 notebooks. Total: **CAD 1,185.00**, including free shipping; estimated delivery is 2 business days. The store confirmed no real payment was taken.",
+  "title": "A normal day",
+  "description": "Compares three stores, signs in for team pricing, then waits for approval before paying.",
+  "recordedAt": "2026-10-09T22:47:54.580Z"
+ },
+ {
+  "id": "fd03c322-401e-4830-b947-7d918a64137e",
+  "source": "recorded",
+  "status": "completed",
+  "model": "gpt-6-luna",
+  "scenario": "stock-out",
+  "startedAt": 1791586460248,
+  "elapsedMs": 242797,
+  "budgetCents": 125000,
+  "conditions": {
+   "harbourSignedIn": true,
+   "hoodiesSoldOutAt": [
+    "harbour"
+   ],
+   "stockOutArmed": false
+  },
+  "steps": [
+   {
+    "kind": "origin",
+    "id": "decision-0",
+    "at": 51063,
+    "origin": "https://proxycart-northbound-goods.vercel.app",
+    "storeId": "northbound",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-0",
+    "at": 53758,
+    "event": {
+     "at": 1791586514006,
+     "storeId": "northbound",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-1",
+    "at": 58853,
+    "origin": "https://proxycart-harbour-print.vercel.app",
+    "storeId": "harbour",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-1",
+    "at": 61287,
+    "event": {
+     "at": 1791586521535,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-2",
+    "at": 67197,
+    "origin": "https://proxycart-maple-supply.vercel.app",
+    "storeId": "maple",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-2",
+    "at": 69652,
+    "event": {
+     "at": 1791586529900,
+     "storeId": "maple",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-3",
+    "at": 79989,
+    "event": {
+     "at": 1791586540237,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "sign-in"
+    }
+   },
+   {
+    "kind": "sign-in",
+    "id": "decision-3",
+    "at": 89450,
+    "storeId": "harbour",
+    "decision": "submit"
+   },
+   {
+    "kind": "store",
+    "id": "store-4",
+    "at": 93060,
+    "event": {
+     "at": 1791586553308,
+     "storeId": "harbour",
+     "kind": "signed-in",
+     "detail": "Team buyer signed in. Team pricing unlocked."
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-5",
+    "at": 93206,
+    "event": {
+     "at": 1791586553454,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "approval",
+    "id": "decision-4",
+    "at": 129680,
+    "evaluation": {
+     "carts": [
+      {
+       "storeId": "harbour",
+       "lines": [
+        {
+         "sku": "HP-HD-21",
+         "name": "Studio Hoodie",
+         "kind": "hoodie",
+         "quantity": 20,
+         "unitCents": 3900,
+         "lineCents": 78000,
+         "stock": 80,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-NB-23",
+         "name": "Linen Notebook A5",
+         "kind": "notebook",
+         "quantity": 20,
+         "unitCents": 825,
+         "lineCents": 16500,
+         "stock": 90,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-TM-22",
+         "name": "Harbour Tumbler",
+         "kind": "tumbler",
+         "quantity": 20,
+         "unitCents": 1200,
+         "lineCents": 24000,
+         "stock": 120,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 118500,
+       "shippingCents": 0,
+       "totalCents": 118500,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      }
+     ],
+     "totalCents": 118500,
+     "budgetCents": 125000,
+     "quantities": {
+      "hoodie": 20,
+      "tumbler": 20,
+      "notebook": 20
+     },
+     "issues": [],
+     "withinBudget": true,
+     "meetsDeadline": true,
+     "complete": true,
+     "valid": true,
+     "bestCents": 115500,
+     "reportedTotalCents": 118500
+    },
+    "summary": "Harbour Print Studio is the lowest option that meets the 4 business day deadline: its team prices total CAD 1,185 with free shipping, and all 60 units are in stock with 2 business day delivery. Maple totals CAD 1,355, while Northbound totals CAD 1,220 but its notebooks arrive in 6 business days.",
+    "changeReason": null,
+    "decision": "approve",
+    "newBudgetCents": null,
+    "mandates": [
+     {
+      "storeId": "harbour",
+      "code": "PXC-••••-BRUQ",
+      "amountCents": 118500,
+      "expiresAt": 1791587489928
+     }
+    ]
+   },
+   {
+    "kind": "store",
+    "id": "store-6",
+    "at": 137425,
+    "event": {
+     "at": 1791586597673,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "checkout"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-7",
+    "at": 149518,
+    "event": {
+     "at": 1791586609766,
+     "storeId": "harbour",
+     "kind": "stock-changed",
+     "detail": "Studio Hoodie sold out while the order was being placed."
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-8",
+    "at": 149518,
+    "event": {
+     "at": 1791586609766,
+     "storeId": "harbour",
+     "kind": "checkout-blocked",
+     "detail": "Order not placed: Studio Hoodie is sold out at Harbour Print Studio.",
+     "amountCents": 118500
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-9",
+    "at": 160305,
+    "event": {
+     "at": 1791586620553,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-10",
+    "at": 167049,
+    "event": {
+     "at": 1791586627297,
+     "storeId": "maple",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-11",
+    "at": 167085,
+    "event": {
+     "at": 1791586627333,
+     "storeId": "northbound",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "approval",
+    "id": "decision-5",
+    "at": 193629,
+    "evaluation": {
+     "carts": [
+      {
+       "storeId": "northbound",
+       "lines": [
+        {
+         "sku": "NB-HD-11",
+         "name": "Heavyweight Team Hoodie",
+         "kind": "hoodie",
+         "quantity": 20,
+         "unitCents": 3600,
+         "lineCents": 72000,
+         "stock": 25,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 72000,
+       "shippingCents": 3000,
+       "totalCents": 75000,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      },
+      {
+       "storeId": "harbour",
+       "lines": [
+        {
+         "sku": "HP-NB-23",
+         "name": "Linen Notebook A5",
+         "kind": "notebook",
+         "quantity": 20,
+         "unitCents": 825,
+         "lineCents": 16500,
+         "stock": 90,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-TM-22",
+         "name": "Harbour Tumbler",
+         "kind": "tumbler",
+         "quantity": 20,
+         "unitCents": 1200,
+         "lineCents": 24000,
+         "stock": 120,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 40500,
+       "shippingCents": 0,
+       "totalCents": 40500,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      }
+     ],
+     "totalCents": 115500,
+     "budgetCents": 125000,
+     "quantities": {
+      "hoodie": 20,
+      "tumbler": 20,
+      "notebook": 20
+     },
+     "issues": [],
+     "withinBudget": true,
+     "meetsDeadline": true,
+     "complete": true,
+     "valid": true,
+     "bestCents": 115500,
+     "reportedTotalCents": 115500
+    },
+    "summary": "The revised split order totals CAD 1,155 including shipping. Northbound has 20 hoodies in stock with 2 business day delivery; Harbour has 20 tumblers and 20 A5 notebooks in stock, ships free above CAD 300, and estimates 2 business days.",
+    "changeReason": "The original Harbour-only order was rejected at checkout because the Studio Hoodie sold out. The revised cart sources 20 hoodies from Northbound and keeps the 20 tumblers and 20 A5 notebooks at Harbour.",
+    "decision": "approve",
+    "newBudgetCents": null,
+    "mandates": [
+     {
+      "storeId": "northbound",
+      "code": "PXC-••••-EFWR",
+      "amountCents": 75000,
+      "expiresAt": 1791587553877
+     },
+     {
+      "storeId": "harbour",
+      "code": "PXC-••••-9MVP",
+      "amountCents": 40500,
+      "expiresAt": 1791587553877
+     }
+    ]
+   },
+   {
+    "kind": "store",
+    "id": "store-12",
+    "at": 199393,
+    "event": {
+     "at": 1791586659641,
+     "storeId": "northbound",
+     "kind": "visit",
+     "detail": "checkout"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-13",
+    "at": 203116,
+    "event": {
+     "at": 1791586663364,
+     "storeId": "northbound",
+     "kind": "order-placed",
+     "detail": "Test order NB-827641 placed with mandate PXC-••••-EFWR.",
+     "amountCents": 75000,
+     "orderNumber": "NB-827641",
+     "mandate": "PXC-••••-EFWR"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-14",
+    "at": 210875,
+    "event": {
+     "at": 1791586671123,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "checkout"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-15",
+    "at": 214927,
+    "event": {
+     "at": 1791586675175,
+     "storeId": "harbour",
+     "kind": "order-placed",
+     "detail": "Test order HP-344651 placed with mandate PXC-••••-9MVP.",
+     "amountCents": 40500,
+     "orderNumber": "HP-344651",
+     "mandate": "PXC-••••-9MVP"
+    }
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac970a1c6a887d2b5442f14ce0aa2e2",
+    "at": 225661,
+    "text": "I’ll compare the three stores’ prices, stock, and delivery estimates for the exact quantities, then build the lowest qualifying carts for your approval."
+   },
+   {
+    "kind": "action",
+    "id": "exec-6d716f1e-1ff5-4338-829a-c3eb0f230a53",
+    "at": 225661,
+    "title": "Connecting to the stores",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-a1a46553-8ead-4909-bc78-a788e2e29500",
+    "at": 225661,
+    "title": "Reviewing store interaction guidance",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-44c66aaf-e4e2-4dd5-9604-674f107e8031",
+    "at": 225661,
+    "title": "Reviewing sign-in guidance",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-395a19ac-78a9-4f77-850e-18433ae5951d",
+    "at": 225661,
+    "title": "Comparing all three stores",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac970e48e4887d283fc8ab3d5930548",
+    "at": 225661,
+    "text": "Northbound has the lowest listed price, but its A5 notebooks arrive in 6 business days, past your deadline. Maple’s 3 day delivery total is above budget, so I’m checking Harbour’s advertised team pricing before deciding."
+   },
+   {
+    "kind": "action",
+    "id": "exec-f6ba3c5c-c83c-4bab-85f9-5317eb54b967",
+    "at": 225661,
+    "title": "Checking team pricing options",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-41a58d27-cbe2-4ffd-bc1e-be60425fbbc0",
+    "at": 225661,
+    "title": "Reviewing sign-in options",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-8ab8c2e8-0467-4a01-92a8-5d9f4bf9bc58",
+    "at": 225661,
+    "title": "Opening Harbour team pricing",
+    "status": "failed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-ec8be742-7247-4c60-b410-8e8a0cc6b6fe",
+    "at": 225661,
+    "title": "Opening Harbour team pricing",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-d66606e2-2a57-496c-b93f-f3108f8713f9",
+    "at": 225661,
+    "title": "Requesting secure sign-in",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-1cc957b9-6b4b-477d-8454-7f51b9612a65",
+    "at": 225661,
+    "title": "Checking Harbour sign-in status",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-2fa179bc-077a-4c2d-9b96-47b5c1d8e99e",
+    "at": 225661,
+    "title": "Reading Harbour team prices",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-822096de-7233-4d2a-a9f7-bcb155575b08",
+    "at": 225661,
+    "title": "Adding 20 hoodies",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-519fe8b3-13ee-4c96-a5f1-e1471a65d781",
+    "at": 225661,
+    "title": "Adding 20 tumblers",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-5ee99069-87a9-4e1f-8009-ca5023148e9a",
+    "at": 225661,
+    "title": "Verifying tumbler quantities",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-11871ade-9369-4cdd-af89-b2ef2cb76704",
+    "at": 225661,
+    "title": "Adding 20 A5 notebooks",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac97115ae4487d2b8198ec9a586bb3f",
+    "at": 225661,
+    "text": "Harbour’s signed in team prices make the complete order CAD 1,185 with free shipping, and all three items show stock for 20 units and 2 business day delivery. The other qualifying comparison is Maple at CAD 1,355; Northbound totals CAD 1,220 but misses the deadline because its notebooks take 6 business days. The Harbour cart is ready for your approval."
+   },
+   {
+    "kind": "action",
+    "id": "exec-568a008e-8866-48ae-b0f9-cef4383adf98",
+    "at": 225661,
+    "title": "Reviewing Harbour checkout",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-31be1b56-4bba-40c4-a0c7-266630149470",
+    "at": 225661,
+    "title": "Verifying the approved order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-88f950e0-fe15-4daa-9585-34829dd7d1b8",
+    "at": 225661,
+    "title": "Placing the approved test order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac9713ad94887d29615b90722713b53",
+    "at": 225661,
+    "text": "Harbour rejected the order because its hoodie sold out at checkout. I’m rechecking the remaining inventory and comparing replacement options, then I’ll request approval for a revised exact cart before any new checkout attempt."
+   },
+   {
+    "kind": "action",
+    "id": "exec-b340cf40-4385-480a-bcac-89c13083e76c",
+    "at": 225661,
+    "title": "Rechecking Harbour stock",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-088d50df-3fa1-49d5-afe3-6d5b968fc03e",
+    "at": 225661,
+    "title": "Rechecking Maple and Northbound stock",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-ed6a9e92-361f-47fe-959b-375bfb56a4d5",
+    "at": 225661,
+    "title": "Removing the sold-out hoodie",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-fc95658f-ae3a-4663-af07-5c13883ac648",
+    "at": 225661,
+    "title": "Adding 20 replacement hoodies",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac97154b88c87d287e9ed051ec69284",
+    "at": 225661,
+    "text": "Harbour’s hoodies are now sold out, while its tumblers and notebooks remain available in the exact quantities. I’ve replaced the hoodies with Northbound’s 20 in stock at CAD 36 each; the revised two store total is CAD 1,155 including Northbound’s CAD 30 shipping, and both stores show 2 business day delivery. I’m submitting this revised cart for approval."
+   },
+   {
+    "kind": "action",
+    "id": "exec-ea11ac18-cb17-46b7-ad78-cad3b55be294",
+    "at": 225661,
+    "title": "Reviewing the approved hoodie order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-1ed575bd-caa5-4760-94b6-291e3f897891",
+    "at": 225661,
+    "title": "Placing the approved hoodie order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-f4257668-3a85-48b8-ad72-bdcb2e202986",
+    "at": 225661,
+    "title": "Verifying the Northbound order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-9805607d-5a19-4934-9b4d-34f14b006e56",
+    "at": 225661,
+    "title": "Reviewing the approved Harbour order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-1b60aedf-aad8-4133-9086-8bd5fbc25d67",
+    "at": 225661,
+    "title": "Placing the approved Harbour order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-a188803e-c220-47a6-b5bf-de79d40381ed",
+    "at": 225661,
+    "title": "Verifying the Harbour order",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_005a0e17375d1366016ac97179b6ec87d2b3be253a3c27432d",
+    "at": 225661,
+    "text": "Placed the approved test orders; no real payment was taken.\n\n- **Northbound Goods:** 20 hoodies — CAD 750 including shipping (order NB-827641)\n- **Harbour Print Studio:** 20 insulated tumblers and 20 A5 notebooks — CAD 405, free shipping (order HP-344651)\n\n**Total: CAD 1,155.** Both stores estimate delivery within 2 business days. The original Harbour hoodie was sold out, so I moved the hoodies to Northbound and received approval for the revised order."
+   }
+  ],
+  "pending": null,
+  "finalMessage": "Placed the approved test orders; no real payment was taken.\n\n- **Northbound Goods:** 20 hoodies — CAD 750 including shipping (order NB-827641)\n- **Harbour Print Studio:** 20 insulated tumblers and 20 A5 notebooks — CAD 405, free shipping (order HP-344651)\n\n**Total: CAD 1,155.** Both stores estimate delivery within 2 business days. The original Harbour hoodie was sold out, so I moved the hoodies to Northbound and received approval for the revised order.",
+  "title": "Sold out at checkout",
+  "description": "Hoodies sell out as the agent pays. It re-plans and asks again before spending more.",
+  "recordedAt": "2026-10-09T22:54:20.248Z"
+ },
+ {
+  "id": "9a839f15-0831-4b9e-a028-978891cc5c3f",
+  "source": "recorded",
+  "status": "completed",
+  "model": "gpt-6-luna",
+  "scenario": "standard",
+  "startedAt": 1791586463258,
+  "elapsedMs": 183831,
+  "budgetCents": 110000,
+  "conditions": {
+   "harbourSignedIn": true,
+   "hoodiesSoldOutAt": [],
+   "stockOutArmed": false
+  },
+  "steps": [
+   {
+    "kind": "origin",
+    "id": "decision-0",
+    "at": 45350,
+    "origin": "https://proxycart-maple-supply.vercel.app",
+    "storeId": "maple",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-0",
+    "at": 48393,
+    "event": {
+     "at": 1791586511651,
+     "storeId": "maple",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-1",
+    "at": 53051,
+    "origin": "https://proxycart-northbound-goods.vercel.app",
+    "storeId": "northbound",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-1",
+    "at": 55819,
+    "event": {
+     "at": 1791586519077,
+     "storeId": "northbound",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "origin",
+    "id": "decision-2",
+    "at": 61204,
+    "origin": "https://proxycart-harbour-print.vercel.app",
+    "storeId": "harbour",
+    "decision": "approve"
+   },
+   {
+    "kind": "store",
+    "id": "store-2",
+    "at": 63591,
+    "event": {
+     "at": 1791586526849,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-3",
+    "at": 73466,
+    "event": {
+     "at": 1791586536724,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "sign-in"
+    }
+   },
+   {
+    "kind": "sign-in",
+    "id": "decision-3",
+    "at": 85907,
+    "storeId": "harbour",
+    "decision": "submit"
+   },
+   {
+    "kind": "store",
+    "id": "store-4",
+    "at": 89455,
+    "event": {
+     "at": 1791586552713,
+     "storeId": "harbour",
+     "kind": "signed-in",
+     "detail": "Team buyer signed in. Team pricing unlocked."
+    }
+   },
+   {
+    "kind": "store",
+    "id": "store-5",
+    "at": 89749,
+    "event": {
+     "at": 1791586553007,
+     "storeId": "harbour",
+     "kind": "visit",
+     "detail": "catalogue"
+    }
+   },
+   {
+    "kind": "approval",
+    "id": "decision-4",
+    "at": 153322,
+    "evaluation": {
+     "carts": [
+      {
+       "storeId": "northbound",
+       "lines": [
+        {
+         "sku": "NB-HD-11",
+         "name": "Heavyweight Team Hoodie",
+         "kind": "hoodie",
+         "quantity": 20,
+         "unitCents": 3600,
+         "lineCents": 72000,
+         "stock": 25,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 72000,
+       "shippingCents": 3000,
+       "totalCents": 75000,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      },
+      {
+       "storeId": "harbour",
+       "lines": [
+        {
+         "sku": "HP-NB-23",
+         "name": "Linen Notebook A5",
+         "kind": "notebook",
+         "quantity": 20,
+         "unitCents": 825,
+         "lineCents": 16500,
+         "stock": 90,
+         "arrivesInBusinessDays": 2
+        },
+        {
+         "sku": "HP-TM-22",
+         "name": "Harbour Tumbler",
+         "kind": "tumbler",
+         "quantity": 20,
+         "unitCents": 1200,
+         "lineCents": 24000,
+         "stock": 120,
+         "arrivesInBusinessDays": 2
+        }
+       ],
+       "subtotalCents": 40500,
+       "shippingCents": 0,
+       "totalCents": 40500,
+       "arrivesInBusinessDays": 2,
+       "issues": []
+      }
+     ],
+     "totalCents": 115500,
+     "budgetCents": 125000,
+     "quantities": {
+      "hoodie": 20,
+      "tumbler": 20,
+      "notebook": 20
+     },
+     "issues": [],
+     "withinBudget": true,
+     "meetsDeadline": true,
+     "complete": true,
+     "valid": true,
+     "bestCents": 115500,
+     "reportedTotalCents": 115500
+    },
+    "summary": "This plan supplies exactly 20 hoodies, 20 insulated tumblers, and 20 A5 notebooks. Northbound has the lowest in-stock hoodie price, while Harbour’s signed-in team pricing makes its tumblers and notebooks the lowest eligible options; all selected items arrive within two business days, and the combined total including shipping is CAD 1,155.00.",
+    "changeReason": null,
+    "decision": "reduce-budget",
+    "newBudgetCents": 110000,
+    "mandates": []
+   },
+   {
+    "kind": "message",
+    "id": "msg_05496ef1584b95da016ac970a5729c87d2bdced81eb0b23477",
+    "at": 170346,
+    "text": "I’ll compare the three stores’ prices, stock, and delivery estimates, then build the lowest-cost carts that meet the four-business-day deadline."
+   },
+   {
+    "kind": "action",
+    "id": "exec-9701aa28-c70a-4048-9095-e81a478b39d4",
+    "at": 170346,
+    "title": "Connecting to the stores",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-fc9c0afd-3942-4e80-8ebc-b418686ca96f",
+    "at": 170346,
+    "title": "Reviewing store details",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-9638ce7b-b961-40f3-bfcd-853ddef23c31",
+    "at": 170346,
+    "title": "Comparing the three stores",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_05496ef1584b95da016ac970e4150087d290810b15b71f2282",
+    "at": 170346,
+    "text": "Northbound has the cheapest hoodies and tumblers, but its notebooks arrive in six business days. Combining its faster items with Maple’s notebooks comes to CAD 1,275 including shipping, so it misses the budget by CAD 25. Harbour lists team pricing after sign-in; I’m checking that option before deciding."
+   },
+   {
+    "kind": "action",
+    "id": "exec-41e283bb-6642-4083-a292-6e50c67ba63a",
+    "at": 170346,
+    "title": "Checking team pricing",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-6c1cce45-c595-4e10-805d-0ed790926402",
+    "at": 170346,
+    "title": "Opening Harbour’s team pricing sign-in",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-c6915ae2-2d50-4c20-be0a-06f606350cbb",
+    "at": 170346,
+    "title": "Reviewing Harbour’s sign-in options",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-2e24f873-7eab-436e-b185-b69e1e8b9540",
+    "at": 170346,
+    "title": "Requesting secure sign-in",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-b2083049-c731-4b9f-9eaf-76709993bd3d",
+    "at": 170346,
+    "title": "Checking the Harbour sign-in result",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-a905baed-0103-4025-a73c-51086d222491",
+    "at": 170346,
+    "title": "Verifying team pricing and delivery",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_05496ef1584b95da016ac97110259887d294b6f0951509e12d",
+    "at": 170346,
+    "text": "Harbour’s team prices are CAD 39.00 per hoodie, CAD 12.00 per tumbler, and CAD 8.25 per notebook, with all three in stock and arriving in two business days. The lowest eligible combination is 20 Northbound hoodies plus 20 Harbour tumblers and 20 Harbour notebooks: CAD 1,155 including shipping, within budget. I’m assembling those exact carts now."
+   },
+   {
+    "kind": "action",
+    "id": "exec-28f16250-e70f-4fdd-8a80-7b9cee56ea79",
+    "at": 170346,
+    "title": "Adding 20 hoodies to the Northbound cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-8a0fc983-df94-4de1-9ff1-17c7d1aa9232",
+    "at": 170346,
+    "title": "Adding 20 tumblers to the Harbour cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-8e62f5b7-edf2-478e-823a-9aad21ab9859",
+    "at": 170346,
+    "title": "Confirming the Harbour cart update",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-6f46e454-95b4-43d1-a79a-b03ff406dbca",
+    "at": 170346,
+    "title": "Adding 20 notebooks to the Harbour cart",
+    "status": "failed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-d3cd808c-a9a7-4935-af75-c91a9f0ae927",
+    "at": 170346,
+    "title": "Checking the notebook quantity control",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-a787fbbd-e1ae-458d-81a7-206dd96a41d1",
+    "at": 170346,
+    "title": "Adding 20 notebooks to the Harbour cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "action",
+    "id": "exec-8cee37a1-ac6b-4a39-bd09-8278c285cda5",
+    "at": 170346,
+    "title": "Confirming both Harbour items",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_05496ef1584b95da016ac9712cec0087d2931557711625b2ce",
+    "at": 170346,
+    "text": "The carts now contain the exact quantities: Northbound’s hoodie line totals CAD 720 plus CAD 30 shipping; Harbour’s tumblers and notebooks total CAD 405 with free shipping. Both selected items are in stock, and every item has a two business day estimate. The combined total is CAD 1,155."
+   },
+   {
+    "kind": "action",
+    "id": "exec-e1cad2c1-a949-4dbd-b226-b52aa889970f",
+    "at": 170346,
+    "title": "Confirming the Northbound cart",
+    "status": "completed",
+    "screenshot": null
+   },
+   {
+    "kind": "message",
+    "id": "msg_05496ef1584b95da016ac9714662bc87d2a55876b7223a9888",
+    "at": 170346,
+    "text": "No items were purchased. The approval step lowered the budget to CAD 1,100, and the cheapest plan that meets the deadline totals CAD 1,155—CAD 55 over budget.\n\nThat plan was 20 hoodies from Northbound (CAD 720 plus CAD 30 shipping) and 20 tumblers plus 20 A5 notebooks from Harbour (CAD 405, free shipping). The selected items arrive in two business days. Northbound’s cheaper notebook takes six business days, so it doesn’t meet the deadline. The carts are staged; checkout was not started."
+   }
+  ],
+  "pending": null,
+  "finalMessage": "No items were purchased. The approval step lowered the budget to CAD 1,100, and the cheapest plan that meets the deadline totals CAD 1,155—CAD 55 over budget.\n\nThat plan was 20 hoodies from Northbound (CAD 720 plus CAD 30 shipping) and 20 tumblers plus 20 A5 notebooks from Harbour (CAD 405, free shipping). The selected items arrive in two business days. Northbound’s cheaper notebook takes six business days, so it doesn’t meet the deadline. The carts are staged; checkout was not started.",
+  "title": "The budget gets cut",
+  "description": "The buyer lowers the budget below anything possible. The agent explains instead of buying.",
+  "recordedAt": "2026-10-09T22:54:23.258Z"
+ }
+]

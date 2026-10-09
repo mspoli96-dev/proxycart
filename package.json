@@ -1,0 +1,35 @@
+{
+  "name": "proxycart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An AI shopping agent with its own browser and a budget, but no power to pay without approval. By Webytex for Startups.",
+  "license": "MIT",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3280",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3280",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@upstash/redis": "1.39.0",
+    "botid": "1.5.11",
+    "lucide-react": "1.51.0",
+    "next": "16.4.0",
+    "openai": "7.30.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "fengari": "0.1.5",
+    "sharp": "0.35.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  }
+}

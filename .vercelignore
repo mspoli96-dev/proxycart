@@ -1,0 +1,6 @@
+.env*
+tests/
+scripts/
+recordings/
+docs/ARTICLE.md
+coverage/
